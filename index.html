@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ofentse Bunnychow Café</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>Ofentse Bunnychow Café</h1>
+    <p>Order your Kota, Sphatlho or Bunny Chow with all your favorite fillings!</p>
+  </div>
+
+  <div class="gallery">
+    <img src="kota.jpg" alt="Kota" />
+    <img src="chips.jpg" alt="Chips" />
+    <img src="drinks.jpg" alt="Drinks" />
+    <img src="people.jpg" alt="People eating Kota" />
+  </div>
+
+  <form id="orderForm">
+    <h2>Place Your Order</h2>
+
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" required />
+
+    <label for="price">Select Price:</label>
+    <select id="price">
+      <option value="20">R20</option>
+      <option value="30">R30</option>
+      <option value="40">R40</option>
+      <option value="50">R50</option>
+      <option value="60">R60</option>
+      <option value="70">R70</option>
+      <option value="80">R80</option>
+      <option value="90">R90</option>
+      <option value="100">R100</option>
+    </select>
+
+    <fieldset>
+      <legend>Choose Ingredients:</legend>
+      <label><input type="checkbox" value="Palony" /> Palony</label>
+      <label><input type="checkbox" value="Russian" /> Russian</label>
+      <label><input type="checkbox" value="Mince" /> Mince</label>
+      <label><input type="checkbox" value="Cheese" /> Cheese</label>
+      <label><input type="checkbox" value="Egg" /> Egg</label>
+      <label><input type="checkbox" value="Atchar" /> Atchar</label>
+    </fieldset>
+
+    <button type="submit">Submit Order</button>
+  </form>
+
+  <div id="confirmation" class="hidden">
+    <h3>✅ Order Received!</h3>
+    <p id="orderSummary"></p>
+  </div>
+
+  <footer>
+    <p>© 2025 Ofentse Bunnychow Café | Taste the Township</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
